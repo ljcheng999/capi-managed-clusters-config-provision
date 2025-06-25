@@ -1,4 +1,4 @@
-variable "aws_region" {
+variable "default_aws_region" {
   type    = string
   default = "us-east-1"
 }
@@ -17,12 +17,21 @@ variable "addition_tags" {
   default = {}
 }
 
+variable "vpc_id" {
+  type    = string
+  default = ""
+}
+variable "capi_shared_sg_name" {
+  type    = string
+  default = ""
+}
+
 variable "aws_account_id_allow_assume_self" {
   type    = string
   default = ""
 }
 
-variable "cm_oidc_providers" {
-  type    = list(any)
-  default = []
+variable "aws_account_id_upstream" {
+  type    = string
+  default = ""
 }
