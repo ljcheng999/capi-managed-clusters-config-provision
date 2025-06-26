@@ -4,7 +4,7 @@
 addition_tags = {}
 
 region = "us-east-1"
-vpc_id = ""
+vpc_id = "vpc-04c76c355e6c7d395"
 
 # assume_role_str = ""
 
