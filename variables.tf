@@ -36,13 +36,11 @@ variable "aws_account_id_upstream" {
   default = ""
 }
 
-variable "aws_account_id_upstream_cluster_oidc_ids" {
-  default = []
-}
-
 variable "default_capa_service_account_name" {
   type    = string
   default = "capa-cluster-irsa-init"
 }
 
-
+variable "aws_downstream_eks_config" {
+  default = []
+}
