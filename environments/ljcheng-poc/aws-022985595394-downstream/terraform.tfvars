@@ -16,8 +16,8 @@ capi_shared_sg_name = "capi-shared-private-sg"
 
 aws_downstream_eks_config = [ # Required
   {
-    upstream_eks_name              = ""
-    upstream_eks_name_sa           = ""
-    upstream_eks_name_sa_namespace = ""
+    upstream_eks_name              = "capi-cm-poc"
+    upstream_eks_name_sa           = "capa-eks-sa"
+    upstream_eks_name_sa_namespace = "provision-system"
   }
 ]

@@ -23,7 +23,8 @@ locals {
       ],
       Principal = {
         AWS = [
-          "arn:aws:iam::${var.aws_account_id_upstream}:role/${item.upstream_eks_name}-pod-identity-agent"
+          "arn:aws:iam::${var.aws_account_id_upstream}:role/${item.upstream_eks_name}-eks-role",
+          "arn:aws:iam::${var.aws_account_id_upstream}:role/${item.upstream_eks_name}-eks-role-manual"
         ]
       }
     }

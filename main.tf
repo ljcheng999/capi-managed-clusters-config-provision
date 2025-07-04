@@ -12,8 +12,7 @@ module "capi_managed_clusters_provision" {
   version                          = "1.0.8"
   aws_account_id_allow_assume_self = var.aws_account_id_allow_assume_self
   aws_account_id_upstream          = var.aws_account_id_upstream
-
-  custom_statement = local.custom_statement
+  custom_statement                 = local.custom_statement
 
   tags = merge(
     local.tags,
