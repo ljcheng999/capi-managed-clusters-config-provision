@@ -9,7 +9,7 @@ provider "aws" {
 
 module "capi_managed_clusters_provision" {
   source                           = "ljcheng999/capi-managed-clusters-provision/aws"
-  version                          = "1.0.7"
+  version                          = "1.0.8"
   aws_account_id_allow_assume_self = var.aws_account_id_allow_assume_self
   aws_account_id_upstream          = var.aws_account_id_upstream
 
